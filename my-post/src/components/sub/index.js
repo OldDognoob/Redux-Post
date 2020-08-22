@@ -30,7 +30,7 @@ class Lists extends React.Component {
         <table border="1">
           <thead>
             <tr>
-              <th> ID </th>
+              <th> ITEM ID </th>
               <th> NAME OF ITEM </th>
               <th> NUMBER OF ITEMS </th>
               <th> ACTION </th>

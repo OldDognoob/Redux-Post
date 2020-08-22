@@ -35,7 +35,7 @@ class AddItem extends React.Component {
 
     return (
       <div>
-        <h2>Add Item</h2>
+        <h2>Add an Item</h2>
         <form onSubmit={this.handleSubmitForAdd}>
           <input
             required

@@ -23,7 +23,7 @@ class EditItem extends React.Component {
     // if(!item) return <p>No Item</p>
     return (
       <div>
-        <h2>Edit Item</h2>
+        <h2>Edit an Item</h2>
         <form onSubmit={this.handleSubmitForEdit}>
           <input type="text" name="id" defaultValue={item.id} />
           <br />
