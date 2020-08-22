@@ -14,24 +14,24 @@ const initialState = {
 // step 3: Create a slice reducer per number of state
 export function Reducer(state = initialState, action) {
   switch (action.type) {
-    case types.ADD_ITEM:
+    case "ADD_ITEM":
       return {
         ...state,
-        items: [...state.items, actions.item],
+        items: [...state.items, action.item],
       };
-    case types.DELETE_ITEM:
+    case "DELETE_ITEM":
       return {
         ...state,
         items: state.items.filter((i) => i.id !== action.id),
       };
-    case types.EDIT_ITEM:
+    case "EDIT_ITEM":
       return {
         ...state,
         items: state.items.filter((i) =>
           i.id === action.id ? { ...i, edit: !i.edit } : i
         ),
       };
-    case types.UPDATE_ITEM:
+    case "UPDATE_ITEM":
       return {
         ...state,
         items: state.items.map((i) =>
